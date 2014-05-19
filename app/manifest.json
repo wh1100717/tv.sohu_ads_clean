@@ -1,0 +1,39 @@
+{
+    "name": "tv.sohu_ads_remove",
+    "version": "0.0.4",
+    "manifest_version": 2,
+    "description": "remove ads form tv",
+    "icons": {
+        "16": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "default_locale": "en",
+    "background": {
+        "scripts": [
+            "scripts/chromereload.js",
+            "scripts/background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://tv.sohu.com/*",
+                "http://my.tv.sohu.com/*"
+            ],
+            "css": [
+                "styles/common.css"
+            ],
+            "js": [
+                "scripts/jquery.min.js",
+                "scripts/common.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "http://*.sohu.com/*"
+    ],
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "popup.html"
+    }
+}
