@@ -14,21 +14,18 @@
             "scripts/background.js"
         ]
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "http://tv.sohu.com/*",
-                "http://my.tv.sohu.com/*"
-            ],
-            "css": [
-                "styles/common.css"
-            ],
-            "js": [
-                "scripts/jquery.min.js",
-                "scripts/common.js"
-            ]
-        }
-    ],
+    "content_scripts": [{
+        "matches": [
+            "http://www.baidu.com/*"
+        ],
+        "css": [
+            "styles/common.css"
+        ],
+        "js": [
+            "scripts/jquery.min.js",
+            "scripts/common.js"
+        ]
+    }],
     "permissions": [
         "http://*.sohu.com/*"
     ],
