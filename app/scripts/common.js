@@ -1,2 +1,1 @@
-alert('123')
-$("#nv > a:nth-child(1)").html(123)
+document.cookie = 'fee_status=true';
